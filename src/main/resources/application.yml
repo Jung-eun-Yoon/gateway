@@ -15,7 +15,7 @@ spring:
         - id: visit
           uri: http://localhost:8082
           predicates:
-            - Path=/visits/**, /visitReqLists/**
+            - Path=/visits/** /visitReqLists/**
         - id: payment
           uri: http://localhost:8083
           predicates:
@@ -23,8 +23,8 @@ spring:
         - id: mypage
           uri: http://localhost:8084
           predicates:
-            - Path=/myPages/**, /myPages/**
-        - id: GiftCoupon
+            - Path=/myPages/** /myPages/**
+        - id: giftcoupon
           uri: http://localhost:8085
           predicates:
             - Path=/giftCoupons/** 
@@ -63,8 +63,8 @@ spring:
           uri: http://mypage:8080
           predicates:
             - Path=/myPages/** /myPages/**
-        - id: GiftCoupon
-          uri: http://GiftCoupon:8080
+        - id: giftcoupon
+          uri: http://giftcoupon:8080
           predicates:
             - Path=/giftCoupons/** 
       globalcors:
